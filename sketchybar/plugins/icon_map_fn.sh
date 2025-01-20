@@ -425,6 +425,12 @@ function icon_map() {
   "WhatsApp")
     icon_result=":whats_app:"
     ;;
+  "Postman")
+    icon_result="󱂛"
+    ;;
+  "Studio 3T")
+    icon_result="󰆼"
+    ;;
   *)
     icon_result=":default:"
     ;;

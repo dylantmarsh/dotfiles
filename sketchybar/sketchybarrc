@@ -14,8 +14,8 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 # If you are looking for other colors, see the color picker:
 # https://felixkratz.github.io/SketchyBar/config/tricks#color-picker
 
-sketchybar --bar position=top height=34 blur_radius=30 color=0x40000000 shadow.color=0x28000000 shadow.angle=0 \
-  border_width=1 border_color=0x28222222 corner_radius=6 margin=8 y_offset=8 padding_left=10 padding_right=10
+sketchybar --bar position=top height=38 blur_radius=30 color=0x60000000 shadow.color=0x28000000 shadow.angle=0 \
+  border_width=1 border_color=0x28222222 corner_radius=6 margin=8 y_offset=5 padding_left=8 padding_right=8
 ##### Changing Defaults #####
 # We now change some default values, which are applied to all further items.
 # For a full list of all available item properties see:
@@ -66,9 +66,7 @@ done
 # We add some regular items to the left side of the bar, where
 # only the properties deviating from the current defaults need to be set
 
-sketchybar --add item chevron left \
-           --set chevron icon=󰜥 label.drawing=off \
-           --add item front_app left \
+sketchybar --add item front_app left \
            --set front_app icon.drawing=on icon.font="sketchybar-app-font:Regular:16.0" script="$PLUGIN_DIR/front_app.sh" \
            --subscribe front_app front_app_switched
 

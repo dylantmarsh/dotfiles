@@ -1,0 +1,35 @@
+[git_branch]
+symbol = '🌱'
+
+[cmake]
+symbol = "🧬 "
+
+[c]
+symbol = "🧬 "
+format = 'via [$name $version]($style)'
+
+[docker_context]
+symbol = "🐳 "
+
+[nodejs]
+symbol = "💀 "
+
+[sudo]
+style = 'bold red'
+symbol = '🧙 '
+disabled = false
+
+[os.symbols]
+Macos = "🍎 "
+
+[package]
+symbol = "📦 "
+
+[zig]
+symbol = "🦎 "
+
+[rust]
+symbol = "🦀 "
+
+[golang]
+symbol = "🐹 "

@@ -14,12 +14,18 @@ brew tap "${formulae[@]}"
 apps=(
   bottom
   cmake
+  fd
+  ffmpeg
+  fish
   font-hack-nerd-font
   font-jetbrains-mono-nerd-font
+  fzf
   git
   grep
+  imagemagick
   kitty
   lazygit
+  poppler
   python
   neofetch
   neovim
@@ -27,6 +33,9 @@ apps=(
   ripgrep
   redis
   sketchybar
+  sevenzip
+  yazi
+  zoxide
 )
 
 brew install "${apps[@]}"

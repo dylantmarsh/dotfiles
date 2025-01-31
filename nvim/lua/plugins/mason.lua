@@ -10,6 +10,7 @@ return {
         "cssls",
         "docker_compose_language_service",
         "dockerls",
+        "gopls",
         "jsonls",
         "lua_ls",
         "pylsp",
@@ -35,7 +36,7 @@ return {
     -- overrides `require("mason-nvim-dap").setup(...)`
     opts = function(_, opts)
       opts.ensure_installed = require("astrocore").list_insert_unique(opts.ensure_installed, {
-        -- add more arguments for adding more debuggers
+        "delve"
       })
     end,
   },

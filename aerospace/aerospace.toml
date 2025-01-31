@@ -59,6 +59,10 @@ run = 'layout floating'
 if.app-name-regex-substring = 'notes'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-name-regex-substring = 'zoom'
+run = 'layout floating'
+
 [key-mapping]
     preset = 'qwerty'
 

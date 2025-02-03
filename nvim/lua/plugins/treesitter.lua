@@ -13,6 +13,7 @@ return {
       "editorconfig",
       "go",
       "lua",
+      "markdown",
       "toml",
       "typescript",
       "vim",

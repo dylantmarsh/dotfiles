@@ -1,7 +1,29 @@
 ---@type LazySpec
 return {
-  { "max397574/better-escape.nvim", enabled = true },
-  { "danilamihailov/beacon.nvim", enabled = true },
+  {
+    "ray-x/lsp_signature.nvim",
+    event = "BufRead",
+    config = function() require("lsp_signature").setup() end,
+  },
+  {
+    "goolord/alpha-nvim",
+    opts = function(_, opts)
+      -- customize the dashboard header
+      opts.section.header.val = {
+        " ███▄    █  ▒█████   ██▓ ▄████▄  ▓█████ ",
+        " ██ ▀█   █ ▒██▒  ██▒▓██▒▒██▀ ▀█  ▓█   ▀ ",
+        "▓██  ▀█ ██▒▒██░  ██▒▒██▒▒▓█    ▄ ▒███   ",
+        "▓██▒  ▐▌██▒▒██   ██░░██░▒▓▓▄ ▄██▒▒▓█  ▄ ",
+        "▒██░   ▓██░░ ████▓▒░░██░▒ ▓███▀ ░░▒████▒",
+        "░ ▒░   ▒ ▒ ░ ▒░▒░▒░ ░▓  ░ ░▒ ▒  ░░░ ▒░ ░",
+        "░ ░░   ░ ▒░  ░ ▒ ▒░  ▒ ░  ░  ▒    ░ ░  ░",
+        "   ░   ░ ░ ░ ░ ░ ▒   ▒ ░░           ░   ",
+        "         ░     ░ ░   ░  ░ ░         ░  ░",
+        "                     ░                  ",
+      }
+      return opts
+    end,
+  },
   {
     "L3MON4D3/LuaSnip",
     config = function(plugin, opts)

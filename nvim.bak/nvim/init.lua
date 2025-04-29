@@ -15,5 +15,12 @@ if not pcall(require, "lazy") then
   vim.cmd.quit()
 end
 
+vim.cmd [[
+  augroup filetypedetect
+    autocmd!
+    autocmd BufRead,BufNewFile *.asm,*.s,*.inc set ft=asm_ca65
+  augroup END
+]]
+
 require "lazy_setup"
 require "polish"

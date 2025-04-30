@@ -38,6 +38,14 @@ return {
     ---@diagnostic disable: missing-fields
     config = {
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
+      volar = {
+        filetypes = { 'typescript', 'javascript', 'vue' },
+        init_options = {
+          vue = {
+            hybridMode = false
+          }
+        }
+      }
     },
     -- customize how language servers are attached
     handlers = {
